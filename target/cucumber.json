@@ -1,0 +1,174 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-11T08:40:29.901Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13058306400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "example.stepDefs.Hooks.Android_setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Check Login Functionality",
+        "description": "",
+        "id": "homepage;check-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 135441400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Inspector Open the Application",
+            "match": {
+              "location": "example.stepDefs.D01_loginStepDefs.inspectorOpenTheApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2578914300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter Valid userName\"inspector\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"inspector\"",
+                  "offset": 20
+                }
+              ],
+              "location": "example.stepDefs.D01_loginStepDefs.enterValidUserName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1833806200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter Valid Password\"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 20
+                }
+              ],
+              "location": "example.stepDefs.D01_loginStepDefs.enterValidPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2244846600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click Login",
+            "match": {
+              "location": "example.stepDefs.D01_loginStepDefs.clickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 756100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Inspector Navigated To the Home Page",
+            "match": {
+              "location": "example.stepDefs.D02_HomepageStepDefs.inspectorNavigatedToTheHomePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Allow App to Access his Location",
+            "match": {
+              "location": "example.stepDefs.D02_HomepageStepDefs.allowAppToAccessHisLocation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9500164800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Expand Activity Section",
+            "match": {
+              "location": "example.stepDefs.D02_HomepageStepDefs.expandActivitySection()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1263830100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on desired Activity4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 25
+                }
+              ],
+              "location": "example.stepDefs.D02_HomepageStepDefs.clickOnDesiredActivityActivityNumber(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Success",
+            "match": {
+              "location": "example.stepDefs.D02_HomepageStepDefs.success()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Homepage",
+    "description": "",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Features/F02_Homepage.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

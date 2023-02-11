@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.84">
+    <testcase classname="Homepage" name="Check Login Functionality" time="30.641">
+        <system-out>
+            <![CDATA[Given Inspector Open the Application........................................passed
+And Enter Valid userName"inspector".........................................passed
+And Enter Valid Password"123456"............................................passed
+And Click Login.............................................................passed
+And Inspector Navigated To the Home Page....................................passed
+And Allow App to Access his Location........................................passed
+And Expand Activity Section.................................................passed
+And Click on desired Activity4..............................................passed
+Then Success................................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
