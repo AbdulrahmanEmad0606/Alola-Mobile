@@ -11,10 +11,6 @@ public class D02_HomepageStepDefs extends P02_Homepage {
         System.out.println("Welcome To HomePage");
     }
 
-    @And("Allow App to Access his Location")
-    public void allowAppToAccessHisLocation() {
-    }
-
     @And("Expand Activity Section")
     public void expandActivitySection() {
         expandAllActivities();
