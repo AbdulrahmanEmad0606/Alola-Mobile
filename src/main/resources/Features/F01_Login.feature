@@ -1,6 +1,5 @@
-
+@regression
 Feature: Login
-
   Scenario Outline: Check Login Functionality
     Given Inspector Open the Application
     And Enter Valid userName<User Name>

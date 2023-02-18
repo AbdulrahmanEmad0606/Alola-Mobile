@@ -1,6 +1,7 @@
 @regression
-Feature: Submit Form
-  Scenario Outline: Check Submitting Scanning Form
+Feature: Submit Saved Form
+
+  Scenario Outline: Check Submitting the saved Scanning Form
     Given Inspector Open the Application
     And Enter Valid userName<UserName>
     And Enter Valid Password<Password>
@@ -11,7 +12,9 @@ Feature: Submit Form
     And Select schedule
     And Click on the Skip Button
     And Fill Form
-    Then Click on Submit Button
+    And Click on the save button
+    And Navigate to saved Events
+    Then Success
     Examples:
       | UserName    | Password | ActivityNumber |
       | "inspector" | "123456" | 4              |

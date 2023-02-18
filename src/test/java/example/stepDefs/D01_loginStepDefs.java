@@ -1,12 +1,12 @@
 package example.stepDefs;
 
-import example.Page.P01_Login;
+import example.Screens.S01_LoginScreen;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class D01_loginStepDefs {
-    P01_Login p01_login=new P01_Login();
+    S01_LoginScreen p01_login=new S01_LoginScreen();
     @Given("Inspector Open the Application")
     public void inspectorOpenTheApplication() {
         System.out.println("Welcome to AlOla App");
