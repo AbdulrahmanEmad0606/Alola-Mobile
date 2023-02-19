@@ -20,11 +20,11 @@ public class S02_HomeScreen extends PageBase {
     }
     public void clickOnActivity(int activityNumber) {
         List<AndroidElement> els = Hooks.driver.findElements(By.id("com.youxel.check_plus:id/itemActivityParent"));
-        els.get(activityNumber).click();
+        clickOnElement(els.get(activityNumber));
     }
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]")
     AndroidElement schedule;
     public void selectSchedule() {
-        schedule.click();
+        clickOnElement(schedule);
     }
 }

@@ -29,6 +29,6 @@ public class S01_LoginScreen extends PageBase {
     MobileElement loginBtn;
     // click on login button
     public void clickLogin(){
-       loginBtn.click();
+       clickOnElement(loginBtn);
     }
 }

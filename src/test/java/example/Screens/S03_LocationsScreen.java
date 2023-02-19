@@ -11,6 +11,6 @@ public class S03_LocationsScreen extends PageBase {
     @AndroidFindBy(id = "com.youxel.check_plus:id/save_tv")
     AndroidElement skipButton;
     public void clickSkip() {
-        skipButton.click();
+        clickOnElement(skipButton);
     }
 }

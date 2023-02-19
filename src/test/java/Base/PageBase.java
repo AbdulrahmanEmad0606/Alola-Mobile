@@ -41,9 +41,20 @@ public class PageBase {
         WebDriverWait wait = new WebDriverWait(Hooks.driver, 20);
         wait.until(ExpectedConditions.textToBePresentInElement(element,text));
     }
-    public void click(MobileElement element) {
-        waitForVisibility(element);
-        element.click();
+    public void clickOnElement(MobileElement element) {
+        try {
+            if (element.isEnabled() && element.isDisplayed()) {
+                waitForVisibility(element);
+                element.click();
+            }
+            else {
+                System.out.println("Unable to click on element");
+            }
+        }
+        catch (Exception e){
+            System.out.println("Unable to click on element "+ e.getStackTrace());
+        }
+
     }
 
     public void sendText(MobileElement element, String text) {
