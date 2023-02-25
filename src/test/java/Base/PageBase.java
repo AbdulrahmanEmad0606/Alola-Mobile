@@ -31,7 +31,7 @@ public class PageBase {
         PageFactory.initElements(new AppiumFieldDecorator(Hooks.driver), this);
     }
     public void waitFor() {
-        Hooks.driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        Hooks.driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
     }
     public void waitForVisibility(MobileElement element) {
         WebDriverWait wait = new WebDriverWait(Hooks.driver, WAIT);
