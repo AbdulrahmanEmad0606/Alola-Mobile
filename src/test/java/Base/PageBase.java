@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PageBase {
 
-    public static final long WAIT = 180;
+    public static final long WAIT = 160;
     AndroidTouchAction actions;
 
     public PageBase() {
